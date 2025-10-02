@@ -1,0 +1,22 @@
+[package]
+name = "k-log"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+num-integer = "0.1.46"
+rug = { version = "1.24", default-features = false, features = ["rational", "float", "std"] }
+
+[[example]]
+name = "pi1"
+path = "examples/pi1.rs"
+
+[[example]]
+name = "pi2"
+path = "examples/pi2.rs"
+
+[[example]]
+name = "pi_log"
+path = "examples/pi_log.rs"
